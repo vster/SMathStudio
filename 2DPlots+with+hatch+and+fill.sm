@@ -1,0 +1,459 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?application progid="SMath Studio Desktop" version="0.96.4909.6802"?>
+<regions>
+  <settings>
+    <identity>
+      <id>5a1f082b-6481-4f70-82c7-5e2c06062a4b</id>
+      <revision>16</revision>
+    </identity>
+    <metadata lang="ger">
+      <title>2D-Diagramme mit Schraffur und Füllung</title>
+      <author>Martin Kraska</author>
+      <description>Dieses Beispiel demonstriert die Verwendung der Code-Bausteine hatch und fill in 2D-Diagrammen</description>
+      <company>FHB</company>
+    </metadata>
+    <metadata lang="eng">
+      <title>2D plots with hatch and fill</title>
+      <author>Martin Kraska</author>
+      <description>This example demonstrates the usage of the snippets hatch and fill in 2D plots</description>
+      <company>FHB</company>
+    </metadata>
+    <calculation>
+      <precision>4</precision>
+      <exponentialThreshold>5</exponentialThreshold>
+      <fractions>decimal</fractions>
+    </calculation>
+    <pageModel active="true" printAreas="true" simpleEqualsOnly="false" printBackgroundImages="true">
+      <paper id="9" orientation="Portrait" width="827" height="1169" />
+      <margins left="39" right="39" top="39" bottom="39" />
+      <header alignment="Center" color="#a9a9a9">&amp;[DATE] &amp;[TIME] - &amp;[FILENAME]</header>
+      <footer alignment="Center" color="#a9a9a9">&amp;[PAGENUM] / &amp;[COUNT]</footer>
+      <backgrounds />
+    </pageModel>
+    <dependences>
+      <assembly name="SMath Studio Desktop" version="0.96.4909.6802" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
+      <assembly name="Math Region" version="0.96.4909.6802" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+      <assembly name="Special Functions" version="1.10.4909.6779" guid="2814e667-4e12-48b1-8d51-194e480eabc5" />
+      <assembly name="Plot Region" version="1.8.4909.6768" guid="c451c2b5-798b-4f08-b9ec-b90963d1ddaa" />
+    </dependences>
+  </settings>
+  <region id="0" left="243" top="9" width="173" height="34" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">x</e>
+        <e type="function" args="1">g</e>
+        <e type="operand">5</e>
+        <e type="operand">x</e>
+        <e type="operand">3</e>
+        <e type="operator" args="2">^</e>
+        <e type="operator" args="2">*</e>
+        <e type="operator" args="1">-</e>
+        <e type="operand">2</e>
+        <e type="operand">x</e>
+        <e type="operator" args="2">*</e>
+        <e type="operator" args="2">+</e>
+        <e type="operand">0.4</e>
+        <e type="operator" args="2">-</e>
+        <e type="operator" args="2">:</e>
+      </input>
+    </math>
+  </region>
+  <region id="1" left="27" top="18" width="201" height="26" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">x</e>
+        <e type="function" args="1">f</e>
+        <e type="operand">0.35</e>
+        <e type="operand">15</e>
+        <e type="operand">x</e>
+        <e type="operator" args="2">*</e>
+        <e type="function" preserve="true" args="1">sin</e>
+        <e type="operator" args="2">*</e>
+        <e type="operand">0.1</e>
+        <e type="operator" args="2">-</e>
+        <e type="operator" args="2">:</e>
+      </input>
+    </math>
+  </region>
+  <region id="2" top="54" color="#000000" bgColor="#ffffff">
+    <area collapsed="true">
+      <title lang="ger">
+        <p>hatch</p>
+      </title>
+    </area>
+    <region id="3" left="27" top="72" width="486" height="272" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <description active="true" position="Top" lang="ger">
+          <p>Erzeugt eine Matrix für die Darstellung vertikaler Linien zwischen den Funktionen f(x) und g(x) im Bereich von x1 bis x2 mit 2*n Linien.</p>
+        </description>
+        <description active="true" position="Top" lang="eng">
+          <p>Generates a matrix for 2*n vertical lines (hatching) between functions f(x) and g(x)in x-range from x1 to x2</p>
+        </description>
+        <input>
+          <e type="operand">1</e>
+          <e type="function" args="1">f</e>
+          <e type="operand">1</e>
+          <e type="function" args="1">g</e>
+          <e type="operand">x.1</e>
+          <e type="operand">x.2</e>
+          <e type="operand">n</e>
+          <e type="function" args="5">hatch</e>
+          <e type="operand">dx</e>
+          <e type="operand">x.2</e>
+          <e type="operand">x.1</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">n</e>
+          <e type="operator" args="2">/</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">h</e>
+          <e type="operand">x.1</e>
+          <e type="operand">x.1</e>
+          <e type="function" args="1">f</e>
+          <e type="operand">x.1</e>
+          <e type="operand">x.1</e>
+          <e type="function" args="1">g</e>
+          <e type="operand">2</e>
+          <e type="operand">2</e>
+          <e type="function" preserve="true" args="6">mat</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">x</e>
+          <e type="operand">x.1</e>
+          <e type="operand">x.2</e>
+          <e type="operand">dx</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">x.1</e>
+          <e type="operand">dx</e>
+          <e type="operator" args="2">+</e>
+          <e type="function" preserve="true" args="3">range</e>
+          <e type="operand">h</e>
+          <e type="operand">h</e>
+          <e type="operand">x</e>
+          <e type="operand">dx</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">x</e>
+          <e type="operand">dx</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">+</e>
+          <e type="function" args="1">g</e>
+          <e type="operand">x</e>
+          <e type="operand">dx</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">x</e>
+          <e type="operand">dx</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">+</e>
+          <e type="function" args="1">f</e>
+          <e type="operand">x</e>
+          <e type="operand">dx</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">x</e>
+          <e type="operand">dx</e>
+          <e type="operator" args="2">+</e>
+          <e type="function" args="1">f</e>
+          <e type="operand">x</e>
+          <e type="operand">dx</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">x</e>
+          <e type="operand">dx</e>
+          <e type="operator" args="2">+</e>
+          <e type="function" args="1">g</e>
+          <e type="operand">4</e>
+          <e type="operand">2</e>
+          <e type="function" preserve="true" args="10">mat</e>
+          <e type="function" preserve="true" args="2">stack</e>
+          <e type="operator" args="2">:</e>
+          <e type="function" preserve="true" args="3">for</e>
+          <e type="operand">h</e>
+          <e type="operand">4</e>
+          <e type="operand">1</e>
+          <e type="function" preserve="true" args="6">line</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="4" top="405" color="#000000" bgColor="#ffffff">
+      <area terminator="true" />
+    </region>
+  </region>
+  <region id="5" left="27" top="423" width="88" height="26" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">t</e>
+        <e type="operand">0</e>
+        <e type="function" preserve="true" args="1">time</e>
+        <e type="operator" args="2">:</e>
+      </input>
+    </math>
+  </region>
+  <region id="6" left="27" top="450" width="716" height="180" color="#000000" bgColor="#ffffff" fontSize="10">
+    <plot type="2d" render="lines" scale_x="6.81707831852777" scale_y="46.1006825541856" scale_z="0" rotate_x="0" rotate_y="0" rotate_z="0" transpose_x="-300" transpose_y="12" transpose_z="0">
+      <input>
+        <e type="operand">x</e>
+        <e type="function" args="1">f</e>
+        <e type="operand">x</e>
+        <e type="function" args="1">g</e>
+        <e type="operand">x</e>
+        <e type="function" args="1">f</e>
+        <e type="operand">x</e>
+        <e type="function" args="1">g</e>
+        <e type="operand">0.1</e>
+        <e type="operand">0.5</e>
+        <e type="operand">50</e>
+        <e type="function" args="5">hatch</e>
+        <e type="operand">3</e>
+        <e type="operand">1</e>
+        <e type="function" preserve="true" args="5">sys</e>
+      </input>
+    </plot>
+  </region>
+  <region id="7" left="27" top="702" width="166" height="26" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">0</e>
+        <e type="function" preserve="true" args="1">time</e>
+        <e type="operand">t</e>
+        <e type="operator" args="2">-</e>
+      </input>
+      <result action="numeric">
+        <e type="operand">1.341</e>
+        <e type="operand" style="unit">s</e>
+        <e type="operator" args="2">*</e>
+      </result>
+    </math>
+  </region>
+  <region id="8" top="738" color="#000000" bgColor="#ffffff">
+    <area collapsed="true">
+      <title lang="ger">
+        <p>fill</p>
+      </title>
+      <title lang="eng">
+        <p>fill</p>
+      </title>
+    </area>
+    <region id="9" left="18" top="765" width="679" height="439" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <description active="true" position="Top" lang="ger">
+          <p>Erzeugt eine Matrix zur Darstellung farbiger Punkte zwischen den Funktionen f(x) und g(x)im Bereich von x1 bis x2 im Abstand von dx und dy.  Die Punkte sind rot bei g(x)&gt;f(x), ansonsten blau. d ist die Schriftgröße der Punkte.</p>
+        </description>
+        <description active="true" position="Top" lang="eng">
+          <p>Generates a plottable matrix of coloured dots between functions f(x) and g(x) for x between x1 and x2 with spacing values dx and dy. d is the font size of the dots. Dots are red for g(x)&gt;f(x), blue otherwise.</p>
+        </description>
+        <input>
+          <e type="operand">1</e>
+          <e type="function" args="1">f</e>
+          <e type="operand">1</e>
+          <e type="function" args="1">g</e>
+          <e type="operand">x.1</e>
+          <e type="operand">x.2</e>
+          <e type="operand">dx</e>
+          <e type="operand">dy</e>
+          <e type="operand">d</e>
+          <e type="function" args="7">fill</e>
+          <e type="operand">p</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">x</e>
+          <e type="operand">x.1</e>
+          <e type="operand">x.2</e>
+          <e type="operand">x.1</e>
+          <e type="operand">dx</e>
+          <e type="operator" args="2">+</e>
+          <e type="function" preserve="true" args="3">range</e>
+          <e type="operand">x</e>
+          <e type="function" args="1">g</e>
+          <e type="operand">x</e>
+          <e type="function" args="1">f</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">0</e>
+          <e type="operator" args="2">&gt;</e>
+          <e type="bracket">(</e>
+          <e type="operand">y</e>
+          <e type="operand">x</e>
+          <e type="function" args="1">f</e>
+          <e type="operand">0.5</e>
+          <e type="operand">dy</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">y</e>
+          <e type="operand">x</e>
+          <e type="function" args="1">g</e>
+          <e type="operand">0.2</e>
+          <e type="operand">dy</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">-</e>
+          <e type="operator" args="2">&lt;</e>
+          <e type="operand">y</e>
+          <e type="operand">y</e>
+          <e type="operand">dy</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">h</e>
+          <e type="operand">p</e>
+          <e type="operand">1</e>
+          <e type="function" preserve="true" args="3">el</e>
+          <e type="operand">x</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">h</e>
+          <e type="operand">p</e>
+          <e type="operand">2</e>
+          <e type="function" preserve="true" args="3">el</e>
+          <e type="operand">y</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">h</e>
+          <e type="operand">p</e>
+          <e type="operand">3</e>
+          <e type="function" preserve="true" args="3">el</e>
+          <e type="operand" style="string">.</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">h</e>
+          <e type="operand">p</e>
+          <e type="operand">4</e>
+          <e type="function" preserve="true" args="3">el</e>
+          <e type="operand">d</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">h</e>
+          <e type="operand">p</e>
+          <e type="operand">5</e>
+          <e type="function" preserve="true" args="3">el</e>
+          <e type="operand" style="string">red</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">p</e>
+          <e type="operand">p</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">6</e>
+          <e type="operand">1</e>
+          <e type="function" preserve="true" args="8">line</e>
+          <e type="function" preserve="true" args="4">for</e>
+          <e type="operand">y</e>
+          <e type="operand">x</e>
+          <e type="function" args="1">g</e>
+          <e type="operand">0.5</e>
+          <e type="operand">dy</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">y</e>
+          <e type="operand">x</e>
+          <e type="function" args="1">f</e>
+          <e type="operand">0.2</e>
+          <e type="operand">dy</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">-</e>
+          <e type="operator" args="2">&lt;</e>
+          <e type="operand">y</e>
+          <e type="operand">y</e>
+          <e type="operand">dy</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">h</e>
+          <e type="operand">p</e>
+          <e type="operand">1</e>
+          <e type="function" preserve="true" args="3">el</e>
+          <e type="operand">x</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">h</e>
+          <e type="operand">p</e>
+          <e type="operand">2</e>
+          <e type="function" preserve="true" args="3">el</e>
+          <e type="operand">y</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">h</e>
+          <e type="operand">p</e>
+          <e type="operand">3</e>
+          <e type="function" preserve="true" args="3">el</e>
+          <e type="operand" style="string">.</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">h</e>
+          <e type="operand">p</e>
+          <e type="operand">4</e>
+          <e type="function" preserve="true" args="3">el</e>
+          <e type="operand">d</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">h</e>
+          <e type="operand">p</e>
+          <e type="operand">5</e>
+          <e type="function" preserve="true" args="3">el</e>
+          <e type="operand" style="string">blue</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">p</e>
+          <e type="operand">p</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">6</e>
+          <e type="operand">1</e>
+          <e type="function" preserve="true" args="8">line</e>
+          <e type="function" preserve="true" args="4">for</e>
+          <e type="function" preserve="true" args="3">if</e>
+          <e type="function" preserve="true" args="3">for</e>
+          <e type="operand">h</e>
+          <e type="operand">3</e>
+          <e type="operand">1</e>
+          <e type="function" preserve="true" args="5">line</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="10" top="1260" color="#000000" bgColor="#ffffff">
+      <area terminator="true" />
+    </region>
+  </region>
+  <region id="11" left="27" top="1278" width="88" height="26" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">t</e>
+        <e type="operand">0</e>
+        <e type="function" preserve="true" args="1">time</e>
+        <e type="operator" args="2">:</e>
+      </input>
+    </math>
+  </region>
+  <region id="12" left="27" top="1305" width="716" height="180" color="#000000" bgColor="#ffffff" fontSize="10">
+    <plot type="2d" render="lines" scale_x="6.74890753534249" scale_y="45.6396757286438" scale_z="0" rotate_x="0" rotate_y="0" rotate_z="0" transpose_x="-300" transpose_y="12" transpose_z="0">
+      <input>
+        <e type="operand">x</e>
+        <e type="function" args="1">f</e>
+        <e type="operand">x</e>
+        <e type="function" args="1">g</e>
+        <e type="operand">x</e>
+        <e type="function" args="1">f</e>
+        <e type="operand">x</e>
+        <e type="function" args="1">g</e>
+        <e type="operand">0.1</e>
+        <e type="operand">0.5</e>
+        <e type="operand">0.005</e>
+        <e type="operand">0.03</e>
+        <e type="operand">10</e>
+        <e type="function" args="7">fill</e>
+        <e type="operand">3</e>
+        <e type="operand">1</e>
+        <e type="function" preserve="true" args="5">sys</e>
+      </input>
+    </plot>
+  </region>
+  <region id="13" left="27" top="1557" width="166" height="26" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">0</e>
+        <e type="function" preserve="true" args="1">time</e>
+        <e type="operand">t</e>
+        <e type="operator" args="2">-</e>
+      </input>
+      <result action="numeric">
+        <e type="operand">1.982</e>
+        <e type="operand" style="unit">s</e>
+        <e type="operator" args="2">*</e>
+      </result>
+    </math>
+  </region>
+</regions>

@@ -1,0 +1,13 @@
+website: http://www.crawler-lib.net/nhunspell
+sources: http://sourceforge.net/p/nhunspell/code/ci/default/tree/
+
+NHunspell is licensed under: GPL/LGPL/MPL. Free use in commercial applications is permitted according to the LGPL and MPL licenses. Your commercial application can link against the NHunspell DLLs.
+
+NHunspell Tri-Licence:
+* GPL  (http://www.gnu.org/copyleft/gpl.html)
+* LGPL (http://www.gnu.org/licenses/lgpl.html)
+* MPL  (http://www.mozilla.org/MPL/MPL-1.1.html)
+
+Copyright: Thomas Maierhofer, Lazlo Nemeth and all contributing authors.
+
+If you use NHunspell and like it, please put a link on http://nhunspell.sourceforge.net/ or write something in your blog about it. Thanks.
