@@ -1,0 +1,500 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?application progid="SMath Studio Desktop" version="1.0.8253.4763"?>
+<worksheet xmlns="http://smath.info/schemas/worksheet/1.0">
+  <settings ppi="96">
+    <identity>
+      <id>7ca9be61-a9ec-4ab9-922e-70832dd6220d</id>
+      <revision>6</revision>
+    </identity>
+    <metadata lang="rus">
+      <author>vster2003@mail.ru</author>
+    </metadata>
+    <calculation>
+      <precision>4</precision>
+      <exponentialThreshold>5</exponentialThreshold>
+      <trailingZeros>false</trailingZeros>
+      <significantDigitsMode>false</significantDigitsMode>
+      <roundingMode>0</roundingMode>
+      <approximateEqualAccuracy>0</approximateEqualAccuracy>
+      <fractions>decimal</fractions>
+    </calculation>
+    <pageModel active="false" viewMode="2" printGrid="false" printAreas="true" simpleEqualsOnly="false" printBackgroundImages="true">
+      <paper id="1" orientation="Portrait" width="850" height="1100" />
+      <margins left="39" right="39" top="49" bottom="49" />
+      <header alignment="Center" color="#a9a9a9">&amp;[DATE] &amp;[TIME] - &amp;[FILENAME]</header>
+      <footer alignment="Center" color="#a9a9a9">&amp;[PAGENUM] / &amp;[COUNT]</footer>
+      <backgrounds />
+    </pageModel>
+    <dependencies>
+      <assembly name="SMath Studio Desktop" version="1.0.8253.4763" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
+      <assembly name="MathRegion" version="1.11.8253.4763" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+      <assembly name="TextRegion" version="1.11.8253.4763" guid="485d28c5-349a-48b6-93be-12a35a1c1e39" />
+    </dependencies>
+  </settings>
+  <regions type="content">
+    <region left="18" top="9" width="246" height="41" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">x1</e>
+          <e type="operand">x2</e>
+          <e type="operand">λ</e>
+          <e type="function" args="3">divseg1</e>
+          <e type="operand">x1</e>
+          <e type="operand">λ</e>
+          <e type="operand">x2</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">1</e>
+          <e type="operand">λ</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="18" top="72" width="36" height="23" color="#000000" fontSize="10">
+      <text lang="rus" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>#02</p>
+        </content>
+      </text>
+    </region>
+    <region left="153" top="99" width="50" height="41" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">λ</e>
+          <e type="operand">1</e>
+          <e type="operand">4</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="18" top="108" width="58" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">A</e>
+          <e type="operand">3</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="90" top="108" width="46" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">B</e>
+          <e type="operand">7</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="18" top="144" width="202" height="26" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">C</e>
+          <e type="operand">A</e>
+          <e type="operand">B</e>
+          <e type="operand">λ</e>
+          <e type="function" args="3">divseg1</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">1</e>
+          <e type="operator" args="1">-</e>
+        </result>
+      </math>
+    </region>
+    <region left="18" top="198" width="36" height="23" color="#000000" fontSize="10">
+      <text lang="rus" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>#03</p>
+        </content>
+      </text>
+    </region>
+    <region left="18" top="225" width="46" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">A</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="81" top="225" width="46" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">B</e>
+          <e type="operand">5</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="18" top="252" width="200" height="26" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">C</e>
+          <e type="operand">A</e>
+          <e type="operand">B</e>
+          <e type="operand">3</e>
+          <e type="operator" args="1">-</e>
+          <e type="function" args="3">divseg1</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">7</e>
+        </result>
+      </math>
+    </region>
+    <region left="18" top="306" width="36" height="23" color="#000000" fontSize="10">
+      <text lang="rus" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>#04</p>
+        </content>
+      </text>
+    </region>
+    <region left="18" top="333" width="26" height="23" color="#000000" fontSize="10">
+      <text lang="rus" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>1)</p>
+        </content>
+      </text>
+    </region>
+    <region left="45" top="333" width="46" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">M</e>
+          <e type="operand">3</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="117" top="333" width="58" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">N</e>
+          <e type="operand">5</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="27" top="369" width="105" height="26" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">d</e>
+          <e type="operand">M</e>
+          <e type="operand">N</e>
+          <e type="operator" args="2">-</e>
+          <e type="function" args="1">abs</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">8</e>
+        </result>
+      </math>
+    </region>
+    <region left="18" top="405" width="26" height="23" color="#000000" fontSize="10">
+      <text lang="rus" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>2)</p>
+        </content>
+      </text>
+    </region>
+    <region left="45" top="405" width="74" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">P</e>
+          <e type="operand">5.5</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="144" top="405" width="74" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Q</e>
+          <e type="operand">2.5</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="18" top="441" width="105" height="26" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">d</e>
+          <e type="operand">Q</e>
+          <e type="operand">P</e>
+          <e type="operator" args="2">-</e>
+          <e type="function" args="1">abs</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">3</e>
+        </result>
+      </math>
+    </region>
+    <region left="18" top="486" width="36" height="23" color="#000000" fontSize="10">
+      <text lang="rus" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>#05</p>
+        </content>
+      </text>
+    </region>
+    <region left="18" top="513" width="26" height="23" color="#000000" fontSize="10">
+      <text lang="rus" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>1)</p>
+        </content>
+      </text>
+    </region>
+    <region left="54" top="513" width="58" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">A</e>
+          <e type="operand">6</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="135" top="513" width="46" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">B</e>
+          <e type="operand">7</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="27" top="540" width="204" height="26" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">M</e>
+          <e type="operand">A</e>
+          <e type="operand">B</e>
+          <e type="operand">1</e>
+          <e type="function" args="3">divseg1</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.5</e>
+        </result>
+      </math>
+    </region>
+    <region left="18" top="576" width="26" height="23" color="#000000" fontSize="10">
+      <text lang="rus" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>2)</p>
+        </content>
+      </text>
+    </region>
+    <region left="54" top="576" width="58" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">C</e>
+          <e type="operand">5</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="135" top="576" width="62" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">D</e>
+          <e type="operand">0.5</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="18" top="612" width="224" height="26" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">M</e>
+          <e type="operand">C</e>
+          <e type="operand">D</e>
+          <e type="operand">1</e>
+          <e type="function" args="3">divseg1</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">2.25</e>
+          <e type="operator" args="1">-</e>
+        </result>
+      </math>
+    </region>
+    <region left="18" top="648" width="36" height="23" color="#000000" fontSize="10">
+      <text lang="rus" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>#06</p>
+        </content>
+      </text>
+    </region>
+    <region left="27" top="675" width="58" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">N</e>
+          <e type="operand">3</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="108" top="675" width="46" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">P</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="27" top="711" width="200" height="26" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">M</e>
+          <e type="operand">N</e>
+          <e type="operand">P</e>
+          <e type="operand">2</e>
+          <e type="operator" args="1">-</e>
+          <e type="function" args="3">divseg1</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">7</e>
+        </result>
+      </math>
+    </region>
+    <region left="18" top="756" width="36" height="23" color="#000000" fontSize="10">
+      <text lang="rus" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>#07</p>
+        </content>
+      </text>
+    </region>
+    <region left="18" top="783" width="58" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">A</e>
+          <e type="operand">1</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="108" top="783" width="46" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">B</e>
+          <e type="operand">5</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="225" top="810" width="200" height="43" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">M1</e>
+          <e type="operand">A</e>
+          <e type="operand">B</e>
+          <e type="operand">1</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">/</e>
+          <e type="function" args="3">divseg1</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">1</e>
+        </result>
+      </math>
+    </region>
+    <region left="18" top="819" width="188" height="26" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">M</e>
+          <e type="operand">A</e>
+          <e type="operand">B</e>
+          <e type="operand">2</e>
+          <e type="function" args="3">divseg1</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">3</e>
+        </result>
+      </math>
+    </region>
+    <region left="18" top="864" width="36" height="23" color="#000000" fontSize="10">
+      <text lang="rus" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>#08</p>
+        </content>
+      </text>
+    </region>
+    <region left="18" top="891" width="58" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">A</e>
+          <e type="operand">7</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="108" top="891" width="58" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">B</e>
+          <e type="operand">3</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="18" top="918" width="217" height="43" color="#000000" fontSize="10">
+      <math>
+        <description active="true" position="Right" lang="eng">
+          <content>
+            <p></p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">C</e>
+          <e type="operand">A</e>
+          <e type="operand">B</e>
+          <e type="operand">1</e>
+          <e type="operand">3</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="1">-</e>
+          <e type="function" args="3">divseg1</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">9</e>
+          <e type="operator" args="1">-</e>
+        </result>
+      </math>
+    </region>
+    <region left="288" top="918" width="217" height="43" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">D</e>
+          <e type="operand">B</e>
+          <e type="operand">A</e>
+          <e type="operand">1</e>
+          <e type="operand">3</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="1">-</e>
+          <e type="function" args="3">divseg1</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">1</e>
+          <e type="operator" args="1">-</e>
+        </result>
+      </math>
+    </region>
+  </regions>
+</worksheet>
